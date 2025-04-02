@@ -20,13 +20,13 @@
 
     <br><br><br><br><br>
 
-    <div class="container">
+    <div class="container"> <!-- div do input -->
         <input type="text" id="taskInput" placeholder="Digite sua tarefa aqui..." >
         <button onclick="addTask()">Adiconar</button>
         <ul id="taskList"></ul>
-    </div>
+    </div> <!-- final da div do imput -->
 
-    <script>
+    <script> //script responsavel por criar as tarefas e adicionar uma nova 
         function addTask() {
             let taskInput = document.getElementById("taskInput");
             let taskText = taskInput.value.trim();
@@ -43,6 +43,6 @@
             let li = button.parentElement;
             li.remove();
         }
-    </script>
+    </script><!-- fim do script -->
 </body>
 </html>
